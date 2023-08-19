@@ -5,8 +5,15 @@
 }
 
 body {
+  font-family: sans-serif;
   display: grid;
   place-items: center;
+  background-color: #0d1117;
+  color: #fff;
+}
+
+.title {
+  margin: 5rem 0;
 }
 
 .container {
@@ -39,10 +46,24 @@ input {
 }
 
 button {
+  font-size: 1rem;
+  font-weight: bolder;
   margin-top: 1rem;
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
+  background-color: #238636;
+  color: #fff;
+  border: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3dcd5a;
 }
 
 output {
   margin-top: 1rem;
+  border-bottom: 1px solid #fff;
+  width: fit-content;
+  height: fit-content;
 }
