@@ -5,7 +5,6 @@ const end = document.getElementById('end')
 const btn = document.getElementById('print-btn')
 const display = document.getElementById('output')
 
-
 // Function to generate the range
 
 const range = (start, end) => {
