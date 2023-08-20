@@ -9,11 +9,11 @@ const display = document.getElementById('output')
 // Function to generate the range
 
 const range = (start, end) => {
-  const result = [];
+  const result = []
   for (let i = start; i <= end; i++) {
-    result.push(i);
+    result.push(i)
   }
-  return result;
+  return result
 }
 
 // Function to display the range
@@ -23,10 +23,10 @@ const displayRange = () => {
   const endNumber = parseInt(end.value)
 
   if (isNaN(startNumber) || isNaN(endNumber)) {
-    display.textContent = 'Please enter valid numbers for start and end.';
+    display.textContent = 'Please enter valid numbers for start and end.'
   } else {
-    const values = range(startNumber, endNumber);
-    display.textContent = `${values.join(', ')}`;
+    const values = range(startNumber, endNumber)
+    display.textContent = `${values.join(', ')}`
   }
 }
 
