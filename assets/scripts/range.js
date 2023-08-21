@@ -1,7 +1,7 @@
 'use strict'
 
-const start = document.getElementById('start')
-const end = document.getElementById('end')
+let start = document.getElementById('start')
+let end = document.getElementById('end')
 const btn = document.getElementById('print-btn')
 const display = document.getElementById('output')
 
@@ -18,15 +18,10 @@ const range = (start, end) => {
 // Function to display the range
 
 const displayRange = () => {
-  const startNumber = parseInt(start.value)
-  const endNumber = parseInt(end.value)
-
-  if (isNaN(startNumber) || isNaN(endNumber)) {
-    display.textContent = 'Please enter valid numbers for start and end.'
-  } else {
-    const values = range(startNumber, endNumber)
-    display.textContent = `${values.join(', ')}`
-  }
+  start = start.value
+  end = end.value
+  const values = range(start, end)
+  display.textContent = `${values}`
 }
 
 btn.addEventListener('click', displayRange)
